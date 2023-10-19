@@ -1,0 +1,22 @@
+.returnAndRefundPage {
+  width: 100%;
+  padding: 20px;
+}
+
+.PageName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.description p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .PageName {
+    padding-top: 70px;
+  }
+}

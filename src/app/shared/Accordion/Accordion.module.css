@@ -1,0 +1,36 @@
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #FFD7C1;
+  color : #FE5B00;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accordionIcon {
+  font-weight: bold;
+}
+
+.accordionContent {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  background-color: #FFD7C1;
+  color : black;
+}
+
+.arrow {
+  color: #e8714d;
+  height: 20px;
+  width: 20px;
+}

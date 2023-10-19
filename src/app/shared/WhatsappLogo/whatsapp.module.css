@@ -1,0 +1,12 @@
+.whatsappLogo {
+  position: fixed;
+  right: 20px;
+  bottom: 0px;
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
+.whatsappLogo img {
+  width: 50px; /* Adjust based on your needs */
+  height: auto;
+  margin-bottom: 5px;
+}

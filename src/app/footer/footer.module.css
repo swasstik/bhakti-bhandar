@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffd6a6;
+  padding: 20px 0 20px 15px;
+  color: #e8714d;
+}
+
+.footerMenu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0;
+  font-size: 20px;
+}

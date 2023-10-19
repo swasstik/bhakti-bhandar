@@ -1,0 +1,468 @@
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes waveAnimationWeb {
+  0% {
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 20%;
+  }
+  50% {
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 10%;
+  }
+  100% {
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 20%;
+  }
+}
+
+@keyframes waveAnimationMobile {
+  0% {
+    border-bottom-left-radius: 50% 4%;
+    border-bottom-right-radius: 50% 8%;
+  }
+  50% {
+    border-bottom-left-radius: 50% 8%;
+    border-bottom-right-radius: 50% 4%;
+  }
+  100% {
+    border-bottom-left-radius: 50% 4%;
+    border-bottom-right-radius: 50% 8%;
+  }
+}
+
+.topBox {
+  background-color: #fff3d9;
+  width: 100%;
+  padding: 20px 5vw 0 5vw;
+}
+
+.productName {
+  margin: 7px 0 10px 0;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  color: #ff5c00;
+  text-align: center;
+}
+
+/* product */
+.productImage {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  border-image: 6px;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-image: 6px;
+}
+
+.productDesc p:first-child {
+  color: #ff5c00;
+  font-size: 20px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.productDesc p:nth-child(2) {
+  color: black;
+  font-size: 19px;
+  padding-bottom: 5px;
+}
+
+.ProductOrderNowBtn {
+  background-color: #ff5c00;
+  padding: 7px 12px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  color: white;
+  animation: zoomInOut 3s infinite ease-in-out;
+  letter-spacing: 1px;
+}
+
+.accordianHeaderBorder {
+  height: 2px;
+  background-color: #ff5c00;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.accordianBox p {
+  font-size: 20px;
+  color: #ff5c00;
+  font-weight: 600;
+}
+
+.benefits {
+  background-color: #ffd7c147;
+  padding: 7px 7px;
+  margin: 20px 20px 0 20px;
+}
+
+.benfitsHeading {
+  font-size: 20px;
+  color: #ff5c00;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benfitsHeadingborder {
+  height: 2px;
+  width: 100%;
+  background-color: #ff5c00;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.benefitsLastPara {
+  margin-top: 8px;
+  font-weight: 600;
+  word-spacing: 1px;
+}
+
+.topDiscountLine {
+  margin: auto;
+  color: #ff5c00;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  /* padding-top: 0px; */
+  display: flex;
+  justify-content: center;
+  animation: blink 1.5s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 70%;
+  }
+}
+
+.HeadingTimeLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeadingTimeLeft button {
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .reviewSwiperBox {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .productsImgSwiper {
+    padding: 60px 5vw 0 5vw;
+  }
+  .topBox {
+    animation: waveAnimationMobile 5s infinite ease-in-out;
+  }
+  .homepage {
+    padding: 8px 0 30px 0;
+    background-color: #fff3d96e;
+  }
+  .salesLine {
+    color: #ff5c00;
+    font-family: Poppins;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 7px;
+  }
+  .mostSaleprodcut {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color: aliceblue;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .productPoints p {
+    color: #000000;
+    letter-spacing: 1px;
+    font-family: Poppins;
+    text-align: justify;
+    padding-left: 20px;
+    text-indent: -25px;
+    word-wrap: break-word;
+  }
+  .productPointer {
+    display: inline;
+    color: #e8714d;
+    margin-right: 10px;
+  }
+  .dicountLine {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #ff5c00;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .orderNowButtonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .orderNowButton {
+    margin: 10px 0 20px 0;
+    padding: 5px 10px;
+    background-color: #ff5c00;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: zoomInOut 3s infinite ease-in-out;
+  }
+  .videoClip {
+    overflow: hidden;
+    margin: 10px 20px 0 20px;
+  }
+  .videoClip div iframe {
+    height: 200px;
+    width: 90vw;
+  }
+  .accordianBox {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .accordianHeaderBorder {
+    width: 80%;
+  }
+  .reviewSwiperBox {
+    margin: 0 20px;
+    max-width: 100%;
+  }
+  /* product listing */
+  .listingProductsAndOrderNowBtn {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .listingProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 5vw;
+    width: 100%;
+  }
+  .product {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .productImage {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  .productDesc {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .productDesc p:first-child {
+    color: #ff5c00;
+    font-size: 20px;
+    padding: 5px !important;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .productDesc p:nth-child(2) {
+    color: black;
+    font-size: 19px;
+    padding-bottom: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .productsImgSwiper {
+    padding: 0px 7vw 0 7vw;
+  }
+  .topBox {
+    height: 680px;
+    padding-bottom: 100px;
+    animation: waveAnimationWeb 5s infinite ease-in-out;
+  }
+  .homepage {
+    margin-top: -20px;
+    padding-top: 20px;
+    background-color: #fff3d96e;
+  }
+  .salesLine {
+    color: #ff5c00;
+    font-family: Poppins;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .mostSaleprodcut {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    margin-top: 70px;
+  }
+  .productsSwiper {
+    height: 400px;
+  }
+  .productsSwiperAndName {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .prodPointOrderNowBtnBox {
+    padding: 10px 50px;
+    margin-top: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .dicountLine {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5c00;
+    font-weight: 600;
+    word-break: break-word;
+  }
+  .productPoints p {
+    color: #000000;
+    margin: 6px 0 7px 0;
+    font-family: Poppins;
+    text-align: justify;
+    padding-left: 20px;
+    text-indent: -25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .productPointer {
+    display: inline;
+    color: #e8714d;
+    margin-right: 10px;
+  }
+  .orderNowButton {
+    margin: 10px 0 20px 0;
+    padding: 5px 10px;
+    background-color: #ff5c00;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: zoomInOut 3s infinite ease-in-out;
+  }
+  .formBenfitBox {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 20px 5vw;
+  }
+  .clipAndBenfits {
+    width: 50%;
+  }
+  .formBox {
+    width: 50%;
+  }
+  .accordianBox {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 7vw;
+  }
+  .accordianHeaderBorder {
+    width: 30%;
+  }
+  .videoClip {
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .videoClip div iframe {
+    height: 250px;
+    width: 100%;
+  }
+  .reviewSwiperBox {
+    height: 400px;
+    padding: 20px 7vw;
+  }
+
+  /* product listing */
+  .listingProductsAndOrderNowBtn {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .listingProducts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 7vw;
+  }
+  .product {
+    /* height: 70%; */
+    width: 30%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .productDesc {
+    /* height: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://narmdeshwarshivling.in
+
+# Sitemaps
+Sitemap: https://narmdeshwarshivling.in/sitemap.xml

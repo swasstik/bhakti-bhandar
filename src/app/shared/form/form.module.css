@@ -1,0 +1,189 @@
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.timeleft{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.timeleft span{
+  margin-left: 2px;
+}
+
+@media (max-width: 480px) {
+  .formBox {
+    max-width: 480px;
+  }
+}
+
+.formBox {
+  border-radius: 6px;
+  background-color: #ffd5a6;
+  padding: 20px 10px;
+  margin: 20px 20px;
+}
+
+.Line1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Line2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #ff5c00;
+  text-align: center;
+}
+
+.formField {
+  margin-bottom: 10px;
+}
+
+.formField label {
+  display: block;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.formField input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 3px 2px;
+  background-color: #faf4e6;
+}
+
+.submitBtnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #ff5c00;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: zoomInOut 3s infinite ease-in-out;
+}
+
+.productAndQuantity {
+  width: 100%;
+  display: flex;
+}
+
+.product {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.quantity {
+  width: 100%;
+}
+
+.product label {
+  display: block;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.product select {
+  width: 100%;
+  border-radius: 4px;
+  padding: 4px 2px;
+  background-color: #faf4e6;
+}
+
+.quantity label {
+  display: block;
+  width: 100%;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.quantity input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 3px 2px;
+  background-color: #faf4e6;
+}
+
+.addressLines {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.addressLines div:first-child {
+  margin-right: 10px;
+}
+
+.addressLine {
+  width: 50%;
+}
+
+.addressLine label {
+  display: block;
+  width: 100%;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.addressLine input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 3px 2px;
+  background-color: #faf4e6;
+}
+
+.error {
+  color: #ff5c00;
+}
+
+.afterSubmitSuccess {
+  display: flex;
+  flex-direction: column;
+}
+
+.shreeman {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ff5c00;
+}
+
+.confirmPara {
+  margin-bottom: 10px;
+}
