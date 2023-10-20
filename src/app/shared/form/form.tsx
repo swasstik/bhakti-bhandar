@@ -113,7 +113,7 @@ const BasicInfoForm: React.FC<FormProps> = ({ formattedTime }) => {
         currentDate,
       };
 
-      const response = await fetch("https://sheetdb.io/api/v1/jd518du79xpu1", {
+      const response = await fetch("https://sheetdb.io/api/v1/jd5", {
         method: "POST",
         headers: {
           Accept: "application/json",
